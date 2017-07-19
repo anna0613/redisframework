@@ -32,7 +32,7 @@ public class CacheLockInterceptor implements InvocationHandler{
 		boolean result = lock.lock(cacheLock.timeOut(), cacheLock.expireTime());
 		if(!result){//取锁失败
 			ERROR_COUNT += 1;
-			throw new CacheLockException("get lock fail");
+//			throw new CacheLockException("get lock fail");
 			
 		}
 		try{

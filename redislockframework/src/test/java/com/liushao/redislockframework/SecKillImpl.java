@@ -7,8 +7,8 @@ public class SecKillImpl implements SeckillInterface{
 	static Map<Long, Long> inventory ;
 	static{
 		inventory = new HashMap<>();
-		inventory.put(10000001L, 10000l);
-		inventory.put(10000002L, 10000l);
+		inventory.put(10000001L, 10000L);
+		inventory.put(10000002L, 10000L);
 	}
 	
 	@Override

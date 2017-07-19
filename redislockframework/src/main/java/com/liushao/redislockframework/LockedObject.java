@@ -13,6 +13,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
+//lockedObject是参数级的注解，用于注解商品ID等基本类型的参数
 public @interface LockedObject {
 	
 

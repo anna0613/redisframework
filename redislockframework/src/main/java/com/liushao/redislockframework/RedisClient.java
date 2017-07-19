@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+
 import com.alibaba.fastjson.JSON;
 
 import redis.clients.jedis.Jedis;
@@ -90,7 +91,7 @@ public class RedisClient {
         	
             Long result = client.setnx(key, value);
             System.out.println("setnx key=" + key + " value=" + value + 
-            		"result=" + result) ;
+            		" result=" + result) ;
         	return result;
         } finally {
         	 jedisPool.returnResourceObject(client);;// 向连接池“归还”资源
